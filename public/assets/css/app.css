@@ -1,0 +1,186 @@
+body,
+html {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: visible
+}
+
+body {
+	background-color: #fdb813;
+	color: #000;
+	font-family: Roboto, 'Open Sans', sans-serif;
+	font-weight: bolder
+}
+
+.logo {
+	font-size: 3.24rem
+}
+
+.display-7 {
+	font-size: 1.12rem
+}
+
+.no-bulleted {
+	list-style: none!important
+}
+
+.bulleted-points figure figcaption {
+	line-height: 1.2
+}
+
+.bulleted-points figure figcaption p {
+	margin: 0
+}
+
+a,
+a:link,
+a:visit {
+	font-weight: 700;
+	color: #000;
+	font-family: "Open Sans";
+	text-decoration: none
+}
+
+ul {
+	font-family: 'Open Sans'
+}
+
+a:focus,
+a:hover {
+	background-color: #000;
+	color: #fdb813
+}
+
+.divider {
+	background-image: url(../Checkermotoslogo.svg);
+	background-repeat: repeat-x;
+	background-size: auto 84px;
+	width: 100%;
+	height: 64px;
+	border: 7px solid;
+	border-left: 0;
+	border-right: none
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Noto Sans JP", "Noto Sans", Arial, sans-serif;
+	text-transform: uppercase
+}
+
+h5,
+h6 {
+	font-family: "Noto Sans", sans-serif
+}
+
+footer {
+	background-color: #000;
+	color: #fdb813;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px
+}
+
+#call-to-action {
+	position: absolute;
+	right: 5%;
+	margin-left: -24px;
+	bottom: 14px;
+	z-index: 4
+}
+
+#scan-btn {
+	font-size: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 48px;
+	padding: 17px
+}
+
+@media screen and (min-width:320px) {
+	.profile-userpic svg {
+		max-width: 64px
+	}
+}
+
+@media screen and (min-width:667px) {
+	.profile-userpic svg {
+		max-width: 128px
+	}
+}
+
+.warning-label span {
+	font-size: 12vw
+}
+
+a {
+	color: inherit
+}
+
+.list-group li {
+	font-size: 1.32rem
+}
+
+li.iphone {
+	display: none
+}
+
+.iphone .android {
+	display: none
+}
+
+.iphone li.iphone {
+	display: block!important
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color:black;
+	display: none;
+	color: #fdb813;
+	z-index: 7;
+}
+
+.overlay.open {
+	display: inherit;
+}
+
+.overlay #overlay-close-btn {
+	color: #fdb813;
+	font-size: 3rem;
+	z-index: 1200;
+	position: relative;
+}
+
+.tip {
+	  display: none;
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+      color: white;
+      background: black;
+      border-radius: 5px;
+}
+
+#qr-link {
+	display: none;
+    color: black;
+    align-self: center;
+    justify-self: center;
+    background-color: #fdb813;
+    transform-origin: center;
+}
+
+#reader video {
+	width: 100% !important;
+}
