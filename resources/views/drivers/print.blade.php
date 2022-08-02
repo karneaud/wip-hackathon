@@ -47,7 +47,7 @@ Licensed under MIT
                     			<figcaption class="figure-caption d-flex flex-column">
                         			<span>SCAN ME</span>
                     			</figcaption>
-  								<img {!! sprintf('src="https://api.qrserver.com/v1/create-qr-code/?data=%s"', urlencode(route("taxi-driver", ['record_id' => $record_id ] ))) !!} class="figure-img img-fluid" alt="...">
+  								<img {!! sprintf('src="https://qrtag.net/api/qr.png?url=%s"', urlencode(route("taxi-driver", ['record_id' => $record_id ] ))) !!} class="figure-img img-fluid" alt="...">
                     			<figcaption class="figure-caption d-flex flex-column"><small>VERIFY VIA URL: </small><span class="text-danger font-weight-bolder pb-2">{{ $short_url }}</span></figcaption>
 							</figure>
                         </div>
