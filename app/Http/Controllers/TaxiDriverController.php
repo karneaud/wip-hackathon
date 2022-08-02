@@ -33,7 +33,7 @@ class TaxiDriverController extends Controller
         
             else $driver = $records['response']['data'][0];
         	
-        	$driver['short_url'] = ''; file_get_contents("https://qrtag.net/api/qr.png?url=" . urlencode(route('taxi-driver', ['record_id' => $record_id ])));
+        	$driver['short_url'] = ''; //file_get_contents("https://qrtag.net/api/qr.png?url=" . urlencode(route('taxi-driver', ['record_id' => $record_id ])));
         
         } catch (\Exception $e)
         {
